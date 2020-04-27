@@ -57,7 +57,7 @@ docker --version && sudo service docker start && sudo systemctl enable docker &&
 mongo --version && sudo service mongod start && sudo systemctl enable mongod && sudo service mongod status
 ```
 
-### Run Astra-Mongo Container:
+### Run Astra + Mongo containers:
 Open a new terminal tab and execute:
 ```
 cd /usr/share/Astra && docker pull mongo
