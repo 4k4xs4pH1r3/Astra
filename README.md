@@ -33,8 +33,7 @@ REST API penetration testing is complex due to continuous changes in existing AP
 
 ```
 cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd Astra && wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py && sudo pip install -r requirements.Docker Installation
-
-https://docs.mongodb.com/manual/administration/install-on-linux/
+```
 
 ## Docker Installation
 
@@ -43,6 +42,12 @@ https://docs.docker.com/engine/install/
 ### MongoDB Installation
 
 https://docs.mongodb.com/manual/administration/install-on-linux/
+
+```
+sudo service mongod start && sudo service mongod status && sudo systemctl enable mongod
+```
+
+### Run Astra-Mongo Container:
 
 ```
 docker pull mongo
