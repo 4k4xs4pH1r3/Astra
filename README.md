@@ -41,8 +41,7 @@ cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd As
 
 ## Docker Installation
 
-1. Installation
-https://docs.docker.com/engine/install/
+1. To install go [here](https://docs.docker.com/engine/install/) and follow the instructions proivided there.
 
 2. Start Docker
 ```
@@ -51,9 +50,7 @@ docker --version && sudo service docker start && sudo systemctl enable docker &&
 
 ### MongoDB 
 
-1. Installation
-
-https://docs.mongodb.com/manual/administration/install-on-linux/
+1. To install go [here](https://docs.mongodb.com/manual/administration/install-on-linux/) and follow the instructions proivided there.
 
 2. Start MongoDB Database Server
 ```
