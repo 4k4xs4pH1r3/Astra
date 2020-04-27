@@ -32,11 +32,7 @@ REST API penetration testing is complex due to continuous changes in existing AP
 ## Installation
 
 ```
-$ git clone https://github.com/flipkart-incubator/Astra
-
-$ cd Astra
-
-$ sudo pip install -r requirements.txt
+cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd Astra && wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py && sudo pip install -r requirements.txt
 
 ```
 
@@ -45,26 +41,32 @@ $ sudo pip install -r requirements.txt
 ### Run Mongo Container:
 
 ```
-$ docker pull mongo
-$ docker run --name astra-mongo -d mongo
+docker pull mongo
+docker run --name astra-mongo -d mongo
 ```
 
 ### Installing GUI Docker: 
 
 ```
-$ git clone https://github.com/flipkart-incubator/Astra.git
-$ cd Astra
-$ docker build -t astra .
-$ docker run --rm -it --link astra-mongo:mongo -p 8094:8094 astra
+cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra.git && cd Astra && 
+```
+```
+docker build -t astra .
+```
+```
+docker run --rm -it --link astra-mongo:mongo -p 8094:8094 astra
 ```
 
 ### Installing CLI Docker :
 
 ```
-$ git clone -b docker-cli https://github.com/flipkart-incubator/Astra.git
-$ cd Astra
-$ docker build -t astra-cli .
-$ docker run --rm -it --link astra-mongo:mongo astra-cli 
+cd /usr/share/ && git clone -b docker-cli https://github.com/flipkart-incubator/Astra.git && cd Astra
+```
+```
+docker build -t astra-cli .
+```
+```
+docker run --rm -it --link astra-mongo:mongo astra-cli 
 ```
 
 ## Dependencies
