@@ -103,7 +103,7 @@ cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo astra-cli
 ## Usage: CLI
 
 ```
-$ python astra.py --help
+python astra.py --help
 
                       _
         /\       | |
