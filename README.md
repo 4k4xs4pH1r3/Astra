@@ -98,11 +98,13 @@ cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo astra-cli
 
 #
 ## Usage: Web interface
-Run the api.py and access the web interface at http://127.0.0.1:8094
+Execute
 ```
 cd /usr/share/Astra/API && python api.py
 
 ```
+Now access the web interface at http://127.0.0.1:8094
+
 
 ## Documentation
 [https://www.astra-security.info](https://www.astra-security.info)
