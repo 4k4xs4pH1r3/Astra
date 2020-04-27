@@ -59,31 +59,31 @@ mongo --version && sudo service mongod start && sudo systemctl enable mongod && 
 ### Run Astra-Mongo Container:
 
 ```
-docker pull mongo
+cd /usr/share/Astra && docker pull mongo
 ```
 
 ```
-docker run --name astra-mongo -d mongo
+cd /usr/share/Astra && docker run --name astra-mongo -d mongo
 ```
 
 ### Installing GUI Docker: 
 
 ```
-docker build -t astra .
+cd /usr/share/Astra && docker build -t astra .
 ```
 
 ```
-docker run --rm -it --link astra-mongo:mongo -p 8094:8094 astra
+cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo -p 8094:8094 astra
 ```
 
 ### Installing CLI Docker :
 
 ```
-docker build -t astra-cli .
+cd /usr/share/Astra && docker build -t astra-cli .
 ```
 
 ```
-docker run --rm -it --link astra-mongo:mongo astra-cli
+cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo astra-cli
 ```
 
 ## Dependencies
