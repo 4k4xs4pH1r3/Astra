@@ -24,15 +24,19 @@ REST API penetration testing is complex due to continuous changes in existing AP
 ## Roadmap
 [https://www.astra-security.info/roadmap/](https://www.astra-security.info/roadmap/)
 
+## Documentation
+[https://www.astra-security.info](https://www.astra-security.info)
+
 ## Requirement
 - Linux or MacOS
-- Python 2.7
+- python 2.7
 - mongoDB
+- docker
 
 ## Installation
 
 ```
-cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd Astra && wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py && sudo pip install -r requirements.Docker Installation
+cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd Astra && wget https://bootstrap.pypa.io/get-pip.py && sudo python get-pip.py && sudo pip install -r requirements.txt && pip install requests logger pymongo ConfigParser pyjwt flask sqlmap
 ```
 
 ## Docker Installation
@@ -86,18 +90,8 @@ cd /usr/share/Astra && docker build -t astra-cli .
 cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo astra-cli
 ```
 
-## Dependencies
-
-- requests
-- logger
-- pymongo
-- ConfigParser
-- pyjwt
-- flask
-- sqlmap
-
 #
-## Usage: Web interface
+## Web interface Usage:
 Execute
 ```
 cd /usr/share/Astra/API && python api.py
@@ -106,10 +100,7 @@ cd /usr/share/Astra/API && python api.py
 Now access the web interface at http://127.0.0.1:8094
 
 
-## Documentation
-[https://www.astra-security.info](https://www.astra-security.info)
-
-## Usage: CLI
+## CLI Usage:
 
 ```
 cd /usr/share/Astra && python astra.py --help
