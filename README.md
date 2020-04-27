@@ -92,11 +92,11 @@ cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo astra-cli
 Execute
 ```
 cd /usr/share/Astra/API && python api.py
-
 ```
 Now access the web interface at http://127.0.0.1:8094
 
-
+#
+#
 ## CLI Usage:
 
 ```
