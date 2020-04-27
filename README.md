@@ -58,7 +58,7 @@ mongo --version && sudo service mongod start && sudo systemctl enable mongod && 
 ```
 
 ### Run Astra-Mongo Container:
-
+Open a new terminal tab and execute:
 ```
 cd /usr/share/Astra && docker pull mongo
 ```
@@ -68,7 +68,7 @@ cd /usr/share/Astra && docker run --name astra-mongo -d mongo
 ```
 
 ### Installing GUI Docker: 
-
+Open a new terminal tab and execute:
 ```
 cd /usr/share/Astra && docker build -t astra .
 ```
@@ -77,8 +77,8 @@ cd /usr/share/Astra && docker build -t astra .
 cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo -p 8094:8094 astra
 ```
 
-### Installing CLI Docker :
-
+### Installing CLI Docker:
+Open a new terminal tab and execute:
 ```
 cd /usr/share/Astra && docker build -t astra-cli .
 ```
@@ -89,7 +89,7 @@ cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo astra-cli
 
 #
 ## Web interface Usage:
-Execute
+Open a new terminal tab and execute:
 ```
 cd /usr/share/Astra/API && python api.py
 ```
@@ -98,7 +98,7 @@ Now access the web interface at http://127.0.0.1:8094
 #
 #
 ## CLI Usage:
-
+Open a new terminal tab and execute:
 ```
 cd /usr/share/Astra && python astra.py --help
 
