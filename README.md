@@ -97,6 +97,13 @@ cd /usr/share/Astra && docker run --rm -it --link astra-mongo:mongo astra-cli
 - sqlmap
 
 #
+## Usage: Web interface
+Run the api.py and access the web interface at http://127.0.0.1:8094
+```
+cd /usr/share/Astra/API && python api.py
+
+```
+
 ## Documentation
 [https://www.astra-security.info](https://www.astra-security.info)
 
@@ -141,12 +148,7 @@ optional arguments:
                         login data of API
 
 ```
-## Usage: Web interface
-Run the api.py and access the web interface at http://127.0.0.1:8094
-```
-cd /usr/share/Astra/API && python api.py
 
-```
 ## Screenshots 
 ### New scan
 ![alt text](https://raw.githubusercontent.com/flipkart-incubator/Astra/dev/Dashboard/static/new%20scan.png)
@@ -167,3 +169,4 @@ cd /usr/share/Astra/API && python api.py
 - Harsh Grover
 - Flipkart security team
 - Pardeep Battu
+
