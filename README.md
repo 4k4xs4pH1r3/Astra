@@ -42,6 +42,8 @@ cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd As
 
 ```
 docker pull mongo
+```
+```
 docker run --name astra-mongo -d mongo
 ```
 
