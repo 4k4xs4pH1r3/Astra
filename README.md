@@ -39,10 +39,13 @@ cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd As
 
 https://docs.docker.com/engine/install/
 
-### MongoDB Installation
+### MongoDB 
+
+1. Installation
 
 https://docs.mongodb.com/manual/administration/install-on-linux/
 
+2. Start MongoDB Database Server
 ```
 sudo service mongod start && sudo service mongod status && sudo systemctl enable mongod
 ```
