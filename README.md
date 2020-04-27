@@ -45,6 +45,7 @@ https://docs.docker.com/engine/install/
 ```
 docker pull mongo
 ```
+
 ```
 docker run --name astra-mongo -d mongo
 ```
@@ -52,11 +53,9 @@ docker run --name astra-mongo -d mongo
 ### Installing GUI Docker: 
 
 ```
-cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra.git && cd Astra && 
-```
-```
 docker build -t astra .
 ```
+
 ```
 docker run --rm -it --link astra-mongo:mongo -p 8094:8094 astra
 ```
@@ -64,18 +63,15 @@ docker run --rm -it --link astra-mongo:mongo -p 8094:8094 astra
 ### Installing CLI Docker :
 
 ```
-cd /usr/share/ && git clone -b docker-cli https://github.com/flipkart-incubator/Astra.git && cd Astra
-```
-```
 docker build -t astra-cli .
 ```
+
 ```
-docker run --rm -it --link astra-mongo:mongo astra-cli 
+docker run --rm -it --link astra-mongo:mongo astra-cli
 ```
 
 ## Dependencies
 
-```
 - requests
 - logger
 - pymongo
@@ -83,7 +79,8 @@ docker run --rm -it --link astra-mongo:mongo astra-cli
 - pyjwt
 - flask
 - sqlmap
-```
+
+#
 ## Documentation
 [https://www.astra-security.info](https://www.astra-security.info)
 
