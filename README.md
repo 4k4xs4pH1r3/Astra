@@ -27,7 +27,7 @@ REST API penetration testing is complex due to continuous changes in existing AP
 ## Documentation
 [https://www.astra-security.info](https://www.astra-security.info)
 
-## Requirement
+## Requirements
 - Linux or MacOS
 - python 2.7
 - mongoDB
