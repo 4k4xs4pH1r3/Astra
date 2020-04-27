@@ -47,7 +47,7 @@ https://docs.mongodb.com/manual/administration/install-on-linux/
 
 2. Start MongoDB Database Server
 ```
-sudo service mongod start && sudo service mongod status && sudo systemctl enable mongod
+sudo service mongod start && sudo service mongod status && sudo systemctl enable mongod && mongo --version
 ```
 
 ### Run Astra-Mongo Container:
