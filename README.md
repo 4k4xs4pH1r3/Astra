@@ -41,9 +41,9 @@ cd /usr/share/ && git clone https://github.com/flipkart-incubator/Astra && cd As
 https://docs.docker.com/engine/install/
 
 2. Start Docker
-
+```
 docker --version && sudo service docker start && sudo systemctl enable docker && sudo service docker status
-
+```
 
 ### MongoDB 
 
