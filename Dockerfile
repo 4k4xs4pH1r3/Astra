@@ -1,4 +1,4 @@
-FROM python:3.11.0a2-alpine
+FROM python:3.11.0a5-alpine
 
 ENV app /app
 
